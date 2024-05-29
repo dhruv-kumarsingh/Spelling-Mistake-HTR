@@ -71,6 +71,7 @@ Saving Annotated Images (save_image_names_to_text_files): Saves the cropped word
 <img src="https://drive.google.com/uc?id=1qE693M2jDni9Gz1H_FMGQO5wg1_3xayz" alt="3" width="400"/>
 
 <img src="https://drive.google.com/uc?id=1FPvLbdfVwMqMd5fXLhQEAwxSxKhcE5i5" alt="21" width="400"/>
+
 ### Parameter Tuning
 
 The algorithm is not scale-invariant
@@ -342,9 +343,9 @@ The model is finally compiled with the Adam optimizer, and the architecture is s
     __________________________________________________________________________________________________
 
 
-Please note that due to the daily runtime limitations on google colab(especially gpu) and the resulting time crunch, I was unable to train the model on the vast dataset properly. I will continue to try to train the model on my local machine and then use the saved model and weights to gather the inferences and refine the model for accuracy and efficiency using the vast dataset.
+#### Please note that due to the daily runtime limitations on google colab(especially gpu) and a time crunch, I was unable to train the model on the vast dataset properly. I will continue to try to train the model on my local machine and then use the saved model and weights to gather the inferences and refine the model for accuracy and efficiency using the vast dataset.
 
-In order to complete the other tasks for the time being, I will proceed with a pretrained model for the time being.
+#### In order to complete the other tasks for the time being, I will proceed with a pretrained model for the time being.
 
 ## Word Recognition
 
@@ -448,8 +449,4 @@ Character Error Rate (CER): 71.28%
 
 The WER and CER are 86.54% and 47.48% for a reasonably well written page.
 
-Even though these are not outstanding metrics, we can expect a better performance from a well-trained CRNN or Transformer based model.
-
-### Potential Improvements
-
-An aspect that can vastly help improve the accuracy can be context awareness using NLP, as that is how humans have a better accuracy for this task as well. But that is a little out of scope to implement here, considering the contraints.
+Even though these are not outstanding metrics, we can expect a better performance from a well-trained CRNN or Transformer based model. I will try to improve this soon.
